@@ -6,7 +6,8 @@
     <ProjectGuid>32cbc7ae-bdfe-42b9-b6d1-b356a42965ba</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
-    <StartupFile>app.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,8 +29,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="appforms.py" />
+    <Compile Include="inserts.py" />
+    <Compile Include="models\actor.py" />
+    <Compile Include="models\base.py" />
+    <Compile Include="models\contact_details.py" />
+    <Compile Include="models\movie.py" />
+    <Compile Include="models\stuntman.py" />
+    <Compile Include="models\__init__.py" />
+    <Compile Include="queries.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="models\__pycache__\actor.cpython-36.pyc" />
+    <Content Include="models\__pycache__\base.cpython-36.pyc" />
+    <Content Include="models\__pycache__\contact_details.cpython-36.pyc" />
+    <Content Include="models\__pycache__\movie.cpython-36.pyc" />
+    <Content Include="models\__pycache__\stuntman.cpython-36.pyc" />
+    <Content Include="models\__pycache__\__init__.cpython-36.pyc" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +58,10 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X64</Architecture>
     </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="models\" />
+    <Folder Include="models\__pycache__\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
