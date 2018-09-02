@@ -1,6 +1,8 @@
 """
-This script runs the application using a development server.
-It contains the definition of routes and views for the application.
+AUTHOR      :   Robert James Patterson
+DATE        :   09/02/2018
+SYNOPSIS    :   This script runs the application using a development server. It contains the 
+                definition of routes and views for the application.
 """
 
 from flask import Flask, redirect, render_template, request, url_for
@@ -17,12 +19,12 @@ def index():
 
 @app.route('/listing')
 def listing():
-    return 0 
+    pass
 
 
 @app.route('/comments')
 def comments():
-    return 0
+    pass
 
 
 if __name__ == '__main__':
