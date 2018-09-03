@@ -21,6 +21,6 @@ class Actor(Base):
 
     
     def __repr__(self):
-        return f'Actor : {self.name}'
+        return f'Actor : {self.name}, Born : {self.birthday}'
 
 

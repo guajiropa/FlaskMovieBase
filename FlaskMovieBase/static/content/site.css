@@ -1,12 +1,78 @@
+/*
+##  AUTHOR      :   Robert James Patterson
+##  DATE        :   09/02/2018
+##  SYNOPSIS    :   Style sheet for 'Bobo's Movie Palace'. It is a mock CRUD application that I am writting
+##                  in Python using SQLAlchemy, Flask and WTForms.
+##
+*/
+
+/* Embedded fonts used in this site */
+@font-face {
+    font-family: 'pypatsregular';
+    src: url('../fonts/pypats-webfont.woff2') format('woff2'), url('fonts/pypats-webfont.woff') format('woff'), url('fonts/pypats-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cartoon_freakregular';
+    src: url('fonts/cartoonfreak.woff2') format('woff2'), url('fonts/cartoonfreak.woff') format('woff'), url('fonts/cartoonfreak.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'waltographregular';
+    src: url('../fonts/waltograph42-webfont.woff2') format('woff2'), url('fonts/waltograph42-webfont.woff') format('woff'), url('fonts/waltograph42-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kentuckyfriedfontregular';
+    src: url('../fonts/kentuckyfriedfont-webfont.woff2') format('woff2'), url('fonts/kentuckyfriedfont-webfont.woff') format('woff'), url('fonts/kentuckyfriedfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    background-color: antiquewhite;
+    background-color: rgb(179, 154, 154);
+}
+
+li {
+    color: aliceblue;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid #000;
+    height: 35px;
+    font-size: 12pt;
+    text-align: center;
+    background-color: rgb(155,64,64);
+    color: rgb(211,185,196);
+}
+
+#footer-spacer {
+    height: 36px;
+}
+
+#footer-copyright {
+    color: antiquewhite;
+    font-size: 9pt;
+    background-color: saddlebrown;
 }
 
 .navbar {
-    background-color: lightslategray;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+    background-color: rgb(155,64,64);
+    color: rgb(211,185,196);
     padding: 8px 5px 8px 5px;
 }
 
@@ -16,7 +82,7 @@ body {
     }
 
         .navbar a:hover {
-            text-decoration: underline;
+            text-decoration: none;
             color: coral;
         }
 

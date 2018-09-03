@@ -1,0 +1,13 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h1>Current Movies</h1>
+    <ul>
+        {% for movie in movies %}
+        <li>
+            Title : {{ movie.title }} was released on : {{ movie.release_date }} 
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

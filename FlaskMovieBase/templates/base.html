@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/mdb.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top">
+        <a class="navbar-brand" href="/">Bobo's Movie Palace</a>
+        <a class="navbar-item" href="{{ url_for('comments') }}">Comments</a>
+        <a class="navbar-item" href="{{ url_for('listing') }}">Our Movies</a>
+        <a class="navbar-item" href="{{ url_for('index') }}">Home</a>
+    </nav>
+    <div class="body-content">
+        <br />
+        <br />
+        <br />
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+    <br />
+    <footer class="page-footer font-small">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 class="text-center font-weight-bold">&copy; Bobosoft WebWerkz 2018</h5>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-center text-uppercase font-weight-bold">
+                    <a href="mailto:guaijropa@hotmail.com">Send us an email</a>
+                </h5>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-center font-weight-bold">614-525-0958</h5>
+            </div>
+        </div>
+        <br />
+    </footer>
+</body>
+</html>

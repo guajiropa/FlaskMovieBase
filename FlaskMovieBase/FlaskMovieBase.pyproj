@@ -6,8 +6,7 @@
     <ProjectGuid>32cbc7ae-bdfe-42b9-b6d1-b356a42965ba</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>app.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -55,6 +54,9 @@
     <Content Include="static\font\roboto\Roboto-Light.woff" />
     <Content Include="static\font\roboto\Roboto-Light.woff2" />
     <Content Include="static\img\pyany_cat.jpg" />
+    <Content Include="templates\base.html" />
+    <Content Include="templates\index.html" />
+    <Content Include="templates\listing.html" />
     <Content Include="_data\site.db" />
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +73,7 @@
   <ItemGroup>
     <Folder Include="models\" />
     <Folder Include="models\__pycache__\" />
+    <Folder Include="templates\" />
     <Folder Include="_data\" />
     <Folder Include="static\" />
     <Folder Include="static\content\" />

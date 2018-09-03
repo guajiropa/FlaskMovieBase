@@ -4,13 +4,19 @@ DATE        :   09/02/2018
 SYNOPSIS    :   This script runs the application using a development server. It contains the 
                 definition of routes and views for the application.
 """
-
+from datetime import date
+from models.actor import Actor
+from models.movie import Movie
+from models.stuntman import Stuntman
+from models.contact_details import ContactDetails
+from models.base import Base, Session, engine
 from flask import Flask, redirect, render_template, request, url_for
+ 
+
 app = Flask(__name__)
 
 # Make the WSGI interface available at the top level so wfastcgi can get it.
 wsgi_app = app.wsgi_app
-
 
 @app.route('/')
 def index():
@@ -19,7 +25,14 @@ def index():
 
 @app.route('/listing')
 def listing():
-    pass
+    # Create a session.
+    session = Session()
+
+    # Get all movies.
+    movies = session.query(Movie).all()
+
+    # Render the 'listing' template and pass it the 'movies' list
+    return render_template('listing.html', movies=movies)
 
 
 @app.route('/comments')
