@@ -1,8 +1,9 @@
 """
 AUTHOR      :   Robert James Patterson
-DATE        :   09/02/2018
+DATE        :   09/24/2018
 SYNOPSIS    :   This script runs the application using a development server. It contains the 
-                definition of routes and views for the application.
+                definition of routes and views for the application, the main which loads the 
+                'Flask' server and the glue to all of the other modules in this application.
 """
 from datetime import date
 from models.actor import Actor
