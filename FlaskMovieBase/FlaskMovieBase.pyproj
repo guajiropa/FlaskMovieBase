@@ -54,6 +54,8 @@
     <Content Include="static\font\roboto\Roboto-Light.woff" />
     <Content Include="static\font\roboto\Roboto-Light.woff2" />
     <Content Include="static\img\pyany_cat.jpg" />
+    <Content Include="static\script\bootstrap-3.3.7.js" />
+    <Content Include="static\script\jquery-1.12.1.min.js" />
     <Content Include="templates\base.html" />
     <Content Include="templates\index.html" />
     <Content Include="templates\listing.html" />
@@ -73,6 +75,7 @@
   <ItemGroup>
     <Folder Include="models\" />
     <Folder Include="models\__pycache__\" />
+    <Folder Include="static\script\" />
     <Folder Include="templates\" />
     <Folder Include="_data\" />
     <Folder Include="static\" />
@@ -80,7 +83,6 @@
     <Folder Include="static\font\" />
     <Folder Include="static\font\roboto\" />
     <Folder Include="static\img\" />
-    <Folder Include="static\script\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
