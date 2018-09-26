@@ -28,7 +28,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
-    <Compile Include="appforms.py" />
+    <Compile Include="forms.py" />
     <Compile Include="inserts.py" />
     <Compile Include="models\actor.py" />
     <Compile Include="models\base.py" />

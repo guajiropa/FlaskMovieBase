@@ -12,7 +12,6 @@ from models.stuntman import Stuntman
 from models.contact_details import ContactDetails
 from models.base import Base, Session, engine
 from flask import Flask, redirect, render_template, request, url_for
- 
 
 app = Flask(__name__)
 
